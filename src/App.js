@@ -8,7 +8,7 @@ import { Balance } from './components/Balance';
 import { AccountSummary } from './components/AccountSummary';
 import { TransactionHistory } from './components/TransactionHistory';
 import { AddTransaction } from './components/AddTransaction';
-import { GlobalProvider } from './components/context/GlobalState';
+import { GlobalProvider } from './context/GlobalState';
 
 function App() {
   return (
