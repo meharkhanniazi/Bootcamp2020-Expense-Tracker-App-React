@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 :root {
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --box-shadow: 0 1px 3px rgba(57, 246, 205, 0.12), 0 1px 2px rgba(212, 106, 106, 0.24);
 }
 
 * {
@@ -29,6 +29,7 @@ body {
 h1 {
   letter-spacing: 1px;
   margin: 0;
+  color: darkslategrey;
   text-align: center;
 }
 
@@ -42,7 +43,7 @@ h3 {
   border-bottom: 1px solid #bbb;
   padding-bottom: 10px;
   margin: 40px 0 10px;
-  text-align: center;
+  text-align: left;
 }
 
 h4 {
@@ -52,7 +53,7 @@ h4 {
 }
 
 .inc-exp-container {
-  background-color: #fff;
+  background-color: rgba(173, 101, 17, 0.20);
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;
@@ -103,7 +104,7 @@ input[type='number'] {
 
 .btn {
   cursor: pointer;
-  background-color: rgb(53, 112, 189);
+  background-color: rgba(173, 101, 17, 0.75);
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
@@ -138,23 +139,23 @@ input[type='number'] {
 }
 
 .list li.plus {
-  border-right: 5px solid #2ed17f;
+  border-right: 5px solid #14a15b;
 }
 
 .list li.plus:hover {
-  border-right: 5px solid #2ed17f;
-  background-color: #2ed17f;
-  color: #f7f7f7
+  border-right: 5px solid #14a15b;
+  background-color: #14a15b;
+  color: #f7f7f7;
 }
 
 .list li.minus {
-  border-right: 5px solid #b92b37;
+  border-right: 5px solid #a01a25;
 }
 
 .list li.minus:hover {
-  border-right: 5px solid #b92b37;
-  background-color: #b92b37;
-  color: #f7f7f7
+  border-right: 5px solid #a01a25;
+  background-color: #a01a25;
+  color: #f7f7f7;
 }
 
 

@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
 
-// Importing Global Context
-import {GlobalContext} from '../context/GlobalState';
-
-//Importing Transaction Component
+// Import Transaction Component
 import { Transaction } from './Transaction';
 
+// Import the Global State
+import { GlobalContext } from '../context/GlobalState';
 
 export const TransactionHistory = () => {
 
@@ -13,17 +12,16 @@ export const TransactionHistory = () => {
 
     return (
         <div>
-            <h3>Transaction History</h3>
-
-            {
-            transactions.map( transaction => (
-                
-                    <Transaction  key = {transaction.id} transaction = {transaction}/>
-                
-            ))
-            }
-            
-                
+            <h3>
+                Transaction History
+            </h3>
+            <ul className="list">
+                {transactions.map(transaction => 
+                    (
+                    <Transaction key={transaction.id} transaction={transaction} />
+                    )
+                )}
+            </ul>
         </div>
     )
 }
